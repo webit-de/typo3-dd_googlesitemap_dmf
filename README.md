@@ -1,6 +1,19 @@
 Google sitemaps for TYPO3
 ======================
 
+---
+
+:raised_hand: :information_source: This is a fork of the TYPO3 extension
+»[dd_googlesitemap_dmf](https://github.com/dohomi/dd_googlesitemap_dmf)« to send pull requests.
+
+To use a patch version of this repository instead of the official release use these commands:
+
+    composer config repositories.dd-googlesitemap-dmf-patch-version vcs https://github.com/webit-de/typo3-dd_googlesitemap_dmf.git
+    composer require dmf/dd-googlesitemap-dmf "dev-2.0.0_patched as 2.0.0"
+
+---
+
+
 This is a "dd_googlesitemap_dmf" TYPO3 extension. You will need a TYPO3 CMS and "dd_googlesitemap" to run it. It extends the functionality of dd_googlesitemap for own extensions.
 
 What does it do?
