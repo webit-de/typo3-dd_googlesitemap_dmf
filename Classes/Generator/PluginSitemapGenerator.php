@@ -1,4 +1,7 @@
 <?php
+
+namespace DMF\DdGooglesitemapDmf\Generator;
+
 /***************************************************************
  *  Copyright notice
  *
@@ -41,7 +44,7 @@
  * @package       TYPO3
  * @subpackage    tx_ddgooglesitemap_dmf
  */
-class tx_ddgooglesitemap_dmf extends DmitryDulepov\DdGooglesitemap\Generator\TtNewsSitemapGenerator {
+class PluginSitemapGenerator extends \DmitryDulepov\DdGooglesitemap\Generator\TtNewsSitemapGenerator {
 
 	/**
 	 * Creates an instance of this class
@@ -162,7 +165,7 @@ class tx_ddgooglesitemap_dmf extends DmitryDulepov\DdGooglesitemap\Generator\TtN
 
 		$conf = array(
 			'parameter'        => $currentSetup['singlePid'],
-			'additionalParams' => '&' . $currentSetup['linkParams'] . '=' . $showUid . $languageParam . $currentSetup['additionalParams'],
+			'additionalParams' => '&' . $currentSetup['linkParams'] . '=' . $showUid . $languageParam,
 			'returnLast'       => 'url',
 			'useCacheHash'     => TRUE,
 		);
